@@ -61,12 +61,14 @@ export default function HomePage() {
             </div>
 
             {/* Riba Card */}
-            <div className="p-6 border rounded-xl shadow-sm">
-              <h4 className="font-bold mb-2 text-lg">Riba (Interest)</h4>
-              <p className="text-sm text-gray-600">
-                Understanding prohibited interest and its modern applications.
-              </p>
-            </div>
+            <a href="/riba" className="block">
+              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <h4 className="font-bold mb-2 text-lg">Riba (Interest)</h4>
+                <p className="text-sm text-gray-600">
+                  Understanding prohibited interest and its modern applications.
+                </p>
+              </div>
+            </a>
 
             {/* Gharar Card */}
             <div className="p-6 border rounded-xl shadow-sm">
