@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import topicsData from '../data/topics.json';
+
 export default function HomePage() {
   return (
     <main className="min-h-screen">
@@ -31,64 +34,30 @@ export default function HomePage() {
       {/* Featured Topics */}
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Topics</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Featured Topics</h2>
+          <p className="text-center text-gray-600 mb-12">
+            Click on any topic to explore detailed Islamic rulings, evidence, and modern applications.
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Syirkah Card */}
-            <a href="/syirkah" className="block">
-              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <h4 className="font-bold mb-2 text-lg">Syirkah</h4>
-                <p className="text-sm text-gray-600">
-                  Islamic partnerships and how to structure them properly.
-                </p>
-              </div>
-            </a>
+            {topicsData.topics.map((topic, index) => (
+              <Link key={index} href={`/${topic.topic.toLowerCase()}`} className="block">
+                <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer bg-white">
+                  <h4 className="font-bold mb-2 text-lg text-green-700">{topic.topic}</h4>
+                  <p className="text-sm text-gray-600 mb-3">{topic.subtopic}</p>
+                  <p className="text-sm text-gray-500 line-clamp-2">{topic.ruling.substring(0, 100)}...</p>
+                </div>
+              </Link>
+            ))}
+          </div>
 
-            {/* Murabahah Card */}
-            <div className="p-6 border rounded-xl shadow-sm">
-              <h4 className="font-bold mb-2 text-lg">Murabahah</h4>
-              <p className="text-sm text-gray-600">
-                Cost-plus financing and markup-based sales contracts.
-              </p>
-            </div>
-
-            {/* Ijarah Card */}
-            <div className="p-6 border rounded-xl shadow-sm">
-              <h4 className="font-bold mb-2 text-lg">Ijarah</h4>
-              <p className="text-sm text-gray-600">
-                Leasing contracts and rental agreements in Islamic finance.
-              </p>
-            </div>
-
-            {/* Riba Card */}
-            <a href="/riba" className="block">
-              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <h4 className="font-bold mb-2 text-lg">Riba (Interest)</h4>
-                <p className="text-sm text-gray-600">
-                  Understanding prohibited interest and its modern applications.
-                </p>
-              </div>
-            </a>
-
-            {/* Gharar Card */}
-            <div className="p-6 border rounded-xl shadow-sm">
-              <h4 className="font-bold mb-2 text-lg">Gharar</h4>
-              <p className="text-sm text-gray-600">
-                Excessive uncertainty and risk in business contracts.
-              </p>
-            </div>
-
-            {/* Business Ethics Card */}
-            <div className="p-6 border rounded-xl shadow-sm">
-              <h4 className="font-bold mb-2 text-lg">Business Ethics</h4>
-              <p className="text-sm text-gray-600">
-                Islamic principles for honest and ethical business practices.
-              </p>
-            </div>
+          <div className="text-center mt-12">
+            <Link href="/library" className="inline-block bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-colors font-semibold">
+              View All Topics →
+            </Link>
           </div>
         </div>
       </section>
-
       {/* Categories Preview */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">

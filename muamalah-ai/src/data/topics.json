@@ -1,0 +1,72 @@
+{
+  "topics": [
+    {
+      "topic": "Riba",
+      "subtopic": "Interest in Loans",
+      "ruling": "Riba is strictly prohibited in Islam. Any predetermined increase on loaned money is considered riba and is haram.",
+      "quran": [
+        {
+          "verse": "2:275",
+          "text": "But Allah has permitted trade and has forbidden interest."
+        },
+        {
+          "verse": "2:278",
+          "text": "O you who have believed, fear Allah and give up what remains of interest, if you should be believers."
+        }
+      ],
+      "hadith": [
+        {
+          "narrator": "Abu Huraira",
+          "text": "The Prophet (ﷺ) cursed the one who consumes riba, the one who gives it, the one who writes it down, and the two who witness it."
+        },
+        {
+          "narrator": "Jabir",
+          "text": "The Prophet (ﷺ) cursed the accepter of interest and its payer, and one who records it, and the two witnesses, and he said: They are all equal."
+        }
+      ],
+      "scholar_opinion": "All four major schools of Islamic jurisprudence (Hanafi, Maliki, Shafi'i, Hanbali) unanimously agree that riba is prohibited. Contemporary scholars emphasize that any form of interest, whether in loans or investments, falls under riba if it involves predetermined returns without risk-sharing.",
+      "modern_application": "In modern banking, conventional interest-based loans are replaced with Islamic financing products like Murabaha (cost-plus financing) or Musharaka (partnership financing). For example, instead of a bank loan with 5% interest, an Islamic bank would purchase an asset and sell it to the customer at cost plus profit margin.",
+      "keywords": ["interest", "riba", "loan", "banking", "finance", "prohibited", "haram"]
+    },
+    {
+      "topic": "Syirkah",
+      "subtopic": "Islamic Partnerships",
+      "ruling": "Syirkah is a lawful partnership where two or more parties contribute capital and/or effort to share profits and losses according to agreed ratios.",
+      "quran": [
+        {
+          "verse": "39:29",
+          "text": "Allah presents an example: a slave owned by quarreling partners and another belonging exclusively to one man - are they equal in comparison? Praise be to Allah! But most of them do not know."
+        }
+      ],
+      "hadith": [
+        {
+          "narrator": "Ibn Abbas",
+          "text": "The Prophet (ﷺ) said: 'The partners are to share according to their capital.'"
+        }
+      ],
+      "scholar_opinion": "Syirkah is considered one of the fundamental Islamic business contracts. Scholars distinguish between different types: 'inan (general partnership) and mufawada (equal partnership). The key requirement is that profit and loss sharing must be proportional to capital contribution unless otherwise agreed.",
+      "modern_application": "Modern applications include joint ventures, startup partnerships, and investment funds. For example, two entrepreneurs starting a business together, or investors pooling money for a real estate development project.",
+      "keywords": ["partnership", "syirkah", "joint venture", "investment", "profit sharing", "loss sharing"]
+    },
+    {
+      "topic": "Murabaha",
+      "subtopic": "Cost-Plus Financing",
+      "ruling": "Murabaha is a lawful sale contract where the seller discloses the cost and adds an agreed profit margin.",
+      "quran": [
+        {
+          "verse": "2:275",
+          "text": "But Allah has permitted trade and has forbidden interest."
+        }
+      ],
+      "hadith": [
+        {
+          "narrator": "Anas ibn Malik",
+          "text": "The Prophet (ﷺ) bought a saddle from a Jew on credit and then paid him."
+        }
+      ],
+      "scholar_opinion": "Murabaha is widely accepted as a legitimate Islamic financing tool. The key conditions are: disclosure of cost price, agreement on profit margin, and immediate ownership transfer. It serves as an alternative to interest-based loans.",
+      "modern_application": "Islamic banks use Murabaha for home financing, car purchases, and business loans. For example, a bank buys a house for $200,000 and sells it to the customer for $220,000 payable over time, instead of charging interest on a loan.",
+      "keywords": ["murabaha", "cost-plus", "financing", "sale", "profit margin", "disclosure"]
+    }
+  ]
+}
